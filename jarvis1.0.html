@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="jarvis2.css">
+</head>
+<body>
+    <div class="container" id="main-interface" style="display: none;">
+        <header>
+            <div class="logo">
+                <div class="status-dot"></div>
+                <h1>J.A.R.V.I.S.</h1>
+            </div>
+            <button id="settings-btn" title="Settings"><i class="fas fa-cog"></i></button>
+        </header>
+
+        <main>
+            <div class="visualizer-container">
+                <div class="orb" id="voice-orb">
+                    <div class="orb-core"></div>
+                    <div class="orb-ring ring-1"></div>
+                    <div class="orb-ring ring-2"></div>
+                    <div class="orb-ring ring-3"></div>
+                </div>
+                <div class="status-text" id="status-text">System Standby</div>
+            </div>
+
+            <div class="chat-container" id="chat-container">
+                <!-- Chat messages will appear here -->
+                <div class="message system-msg">
+                    <div class="msg-content">System initialized. Awaiting commands.</div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="search-form">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Ask Jarvis anything..." autocomplete="off">
+                        <button type="button" id="mic-btn" class="mic-btn" title="Toggle Voice Recognition">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <button type="submit" id="send-btn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <div class="orb-ring ring-1"></div>
+                    <div class="orb-ring ring-2"></div>
+                    <div class="orb-ring ring-3"></div>
+                </div>
+                <div class="status-text" id="status-text">System Standby</div>
+            </div>
+
+            <div class="chat-container" id="chat-container">
+                <!-- Chat messages will appear here -->
+                <div class="message system-msg">
+                    <div class="msg-content">System initialized. Awaiting commands.</div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="search-form">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Ask Jarvis anything..." autocomplete="off">
+                        <button type="button" id="mic-btn" class="mic-btn" title="Toggle Voice Recognition">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                        <button type="submit" id="send-btn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="jarvis2.js"></script>
+</body>
+</html>
